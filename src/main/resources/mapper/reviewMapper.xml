@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="kr.co.goodjobproject.dao.ReviewDAO">
+	<!-- 리뷰 목록 -->	
+	<select id="getListPagingReview" resultType="ReviewListnewDTO">
+		select c.cno, c.cname, c.caddr, t.tname, round(avg(r.rstar),0)as avg, COUNT(r.cno)as cnt 
+			from company c 
+			left outer join topindustry t on t.tno = c.tno 
+			left outer join Review r on r.cno = c.cno 
+			<where>
+				<if test='search != null and search !="" '>
+					c.cname like concat('%',#{search},'%')
+				</if>		
+			</where>
+			<if test='sort == null or sort == "" '>
+				group by c.cno order by c.cno desc
+			</if>
+			<if test='sort != null and sort != "" '>
+				<include refid="sort" />
+			</if>
+			limit #{skip}, #{amount}
+	</select>
+	
+	<sql id="sort">
+		<if test='sort == "avg"'>
+			group by c.cno order by avg desc
+		</if>
+		<if test='sort == "cnt"'>
+			group by c.cno order by cnt desc
+		</if>
+	</sql>
+	
+	<!-- 리뷰 총 개수 -->
+	<select id="getTotal" resultType="int">
+		select count(*)
+		from company c 
+		left outer join topindustry t on t.tno = c.tno 
+		left outer join Review r on r.cno = c.cno 
+		<where>
+			<if test='search !=null and search != "" '>
+				c.cname like concat('%',#{search},'%')
+			</if>		
+		</where>	
+	</select>
+	
+</mapper>

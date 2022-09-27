@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="kr.co.goodjobproject.dao.HireDAO">
+	<!-- 공고 목록 -->	
+	<select id="getHireListPaging" resultType="HireListDTO">
+		select h.hno, c.cno, h.htitle, h.hworkinfo, h.hdate, c.cname, j.jtitle, j.jno, s.smallname, i.bigname, round(avg(r.rstar), 1) as star, count(b.hno) as count 
+		from company c 
+		left outer join hire h on c.cno = h.cno
+    	left outer join jobcode j on j.jno = h.jno
+		left outer join bookmark b on b.hno = h.hno
+		left outer join Review r on r.cno = h.cno
+    	left outer join smalllocation s on s.smallno = h.smallno
+    	left outer join biglocation i on i.bigno = h.bigno
+    	<where> 
+	    	<if test='keyword != null and keyword != "" '>
+				c.cname like concat('%',#{keyword},'%') or i.bigname like concat('%',#{keyword},'%')
+	    	</if>
+	    	<if test='smallno != null and smallno != "" '>
+				and s.smallno = #{smallno}
+	    	</if>
+	    	<if test='jno != null and jno != "" '>
+	    		and j.jno = #{jno}
+	    	</if>
+    	</where>
+    	<if test='sort == null or sort == "" '>
+    		 group by h.hno order by h.hno desc
+    	</if>
+    	<if test='sort != null and sort != "" '>
+			<include refid="sort" />
+    	</if>
+		limit #{skip}, #{amount}
+	</select>
+	
+	<sql id="sort">
+		<if test='sort == "hno"'>
+			group by h.hno order by h.hno desc
+		</if>
+		
+		<if test='sort == "bookmark"'>
+			group by h.hno order by count desc
+		</if>
+		
+		<if test='sort == "star"'>
+			group by h.cno order by star desc
+		</if>
+	</sql>
+	
+	<!-- 공고 총 개수 -->
+	<select id="getTotal" resultType="int">
+		select count(*) 
+		from company c 
+		left outer join hire h on c.cno = h.cno
+    	left outer join jobcode j on j.jno = h.jno
+    	left outer join smalllocation s on s.smallno = h.smallno
+    	left outer join biglocation i on i.bigno = h.bigno
+    	<where> 
+	    	<if test='keyword != null and keyword != "" '>
+				c.cname like concat('%',#{keyword},'%') or i.bigname like concat('%',#{keyword},'%')
+	    	</if>
+	    	<if test='smallno != null and smallno != "" '>
+				and s.smallno = #{smallno}
+	    	</if>
+	    	<if test='jno != null and jno != "" '>
+	    		and j.jno = #{jno}
+	    	</if>
+    	</where>
+	</select>
+
+</mapper>

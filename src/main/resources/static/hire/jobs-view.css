@@ -1,0 +1,4201 @@
+@charset "utf-8";
+/* default layout override */
+body {
+	min-width: 1260px;
+	padding-top: 56px;
+}
+
+#sri_header {
+	position: absolute
+}
+
+#sri_header.simple ~ #sri_section {
+	margin-top: 0
+}
+
+#content {
+	margin: 0;
+	padding: 39px 0 40px;
+	width: 100%;
+	min-height: 2000px;
+	background: #f1f3f9
+}
+
+button {
+	border: 0;
+	background: none
+}
+
+.clipboard_dummy {
+	overflow: hidden;
+	position: fixed;
+	top: -1px;
+	left: -1px;
+	width: 1px;
+	height: 1px
+}
+
+.jview .enc_mail {
+	display: none
+}
+
+#header>.inner.fixed_script {
+	position: absolute !important
+}
+
+/* 공통 요소들 */
+.spr_jview:before, .spr_jview:after {
+	display: inline-block;
+	vertical-align: top;
+	background:
+		url(//www.saraminimage.co.kr/sri/person/jobs_view/spr_jview_220126.png)
+		no-repeat
+}
+
+.jview .btn_jview {
+	display: inline-block;
+	padding: 0 9px 3px;
+	height: 28px;
+	border: 1px solid #e4e4e4;
+	box-sizing: border-box;
+	font-size: 0;
+	vertical-align: top;
+	background-color: #fff
+}
+
+.jview a.btn_jview {
+	line-height: 23px
+}
+
+.jview .btn_jview span {
+	color: #666;
+	font-size: 13px;
+	font-weight: normal;
+	letter-spacing: -1px
+}
+
+.jview .jv_header .btn_jview span {
+	color: #888
+}
+
+.jview .btn_jview strong {
+	color: #666;
+	font-size: 13px;
+	font-weight: bold;
+	letter-spacing: -1px
+}
+
+.jview .btn_interest:before {
+	margin: 3px 5px 0 0;
+	width: 15px;
+	height: 13px;
+	background-position: 0 0;
+	content: ""
+}
+
+.jview .btn_interest.on:before {
+	background-position: -30px 0
+}
+
+.jview .btn_print:before {
+	margin: 3px 5px 0 0;
+	width: 15px;
+	height: 15px;
+	background-position: -100px -70px;
+	content: ""
+}
+
+.jview .btn_share:before {
+	margin: 3px 5px 0 0;
+	width: 12px;
+	height: 13px;
+	background-position: -80px -70px;
+	content: ""
+}
+
+.jview .btn_report:before {
+	margin: 3px 5px 0 0;
+	width: 12px;
+	height: 13px;
+	background-position: -30px -170px;
+	content: ""
+}
+
+.jview .btn_scrap {
+	display: block;
+    padding: 11px 0 7px;
+    width: 70px;
+    height: 70px;
+    /* border: 1px solid #e9e9e9; */
+}
+
+.jview .btn_scrap .txt_scrap {
+	display: block;
+	padding-top: 24px;
+	width: 100%;
+	height: 100%;
+	color: #949494;
+	box-sizing: border-box;
+	font-size: 12px;
+	letter-spacing: 0;
+	line-height: 14px
+}
+
+.jview .btn_scrap .txt_scrap:before {
+	position: absolute;
+	left: 50%;
+	top: 11px;
+	margin-left: -10px;
+	width: 19px;
+	height: 19px;
+	background-position: -60px 0
+}
+
+.jview .btn_scrap.on .txt_scrap:before {
+	background-position: -60px -30px
+}
+
+.jview .btn_link:after {
+	margin: 8px 0 0 8px;
+	width: 6px;
+	height: 9px;
+	background-position: 0 -150px;
+	content: ""
+}
+
+.jview .sri_btn_lg {
+	display: block;
+	width: 185px
+}
+
+.jview .sri_btn_lg span {
+	width: 183px
+}
+
+.jview .share {
+	display: inline-block;
+	position: relative;
+	margin-left: 4px;
+	vertical-align: middle
+}
+
+.jview .share .list_share {
+	display: none;
+	position: absolute;
+	top: 38px;
+	left: 50%;
+	margin-left: -62px;
+	padding: 2px;
+	width: 123px;
+	height: 30px;
+	border: 1px solid #eee;
+	background-color: #fff
+}
+
+.jview .share .list_share:before {
+	position: absolute;
+	top: -7px;
+	left: 58px;
+	width: 11px;
+	height: 7px;
+	background-position: -60px -20px;
+	content: ""
+}
+
+.jview .share .list_share:after {
+	position: absolute;
+	top: -20px;
+	left: -1px;
+	width: 129px;
+	height: 20px;
+	background: none;
+	content: ""
+}
+
+.jview .share .list_share li {
+	float: left;
+	border-left: 1px solid #eee
+}
+
+.jview .share .list_share .spr_jview {
+	display: block;
+	padding: 4px;
+	width: 30px;
+	height: 30px;
+	box-sizing: border-box
+}
+
+.jview .share .list_share li:first-child {
+	border-left: 0
+}
+
+.jview .share .list_share .spr_jview:after {
+	display: block;
+	width: 22px;
+	height: 22px;
+	content: ""
+}
+
+.jview .share .list_share .facebook:after {
+	background-position: 0 -40px
+}
+
+.jview .share .list_share .twitter:after {
+	background-position: -30px -40px
+}
+
+.jview .share .list_share .copy_url:after {
+	background-position: -60px -40px
+}
+
+.jview .share .list_share .send_sms:after {
+	background-position: -90px -40px
+}
+
+.jview .share:hover .list_share {
+	display: block
+}
+
+.jview .report {
+	display: inline-block
+}
+
+.jv_title {
+	margin-bottom: 14px;
+	color: #222;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: -1px;
+	line-height: 22px
+}
+
+.jv_title>strong {
+	color: #4876ef
+}
+
+.jv_title .link_txt {
+	float: right;
+	margin: 2px 11px 0 0;
+	border-bottom: 1px solid #4876ef;
+	font-weight: normal;
+	font-size: 13px;;
+	line-height: 17px;
+	color: #4876ef
+}
+
+.jv_title .link_txt:after {
+	position: absolute;
+	right: 0;
+	top: 7px;
+	width: 6px;
+	height: 9px;
+	background-position: 0 -170px;
+	content: ""
+}
+
+.jview a+.toolTipWrap, .jview span+.toolTipWrap, .jview strong+.toolTipWrap
+	{
+	margin-left: 6px;
+	vertical-align: top
+}
+
+.jview .toolTipWrap+.toolTipWrap {
+	margin-left: 4px
+}
+
+.jview .toolTipWrap.opened .toolTip {
+	display: block
+}
+
+.jview .toolTip .toolTipCont {
+	font-size: 12px
+}
+
+.jview .toolTip .toolTipTit, .jview .toolTip p {
+	color: #666;
+	word-break: break-all
+}
+
+.jview .toolTip ul {
+	display: block;
+	font-size: 12px
+}
+
+.jview .toolTip ul>li {
+	position: relative;
+	margin-top: 6px;
+	padding-left: 66px;
+	min-height: 16px;
+	color: #666;
+	line-height: 16px
+}
+
+.jview .toolTip ul>li:first-child {
+	margin-top: 0
+}
+
+.jview .toolTip ul>li>span {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 66px;
+	color: #888;
+	line-height: 16px
+}
+
+.jview .toolTip .txt_noti {
+	margin-top: 10px;
+	padding: 8px 15px 10px;
+	color: #949494;
+	font-size: 11px;
+	letter-spacing: -1px;
+	line-height: 17px;
+	background-color: #f9f9f9
+}
+
+.jview .scroll {
+	scrollbar-3dLight-Color: #fff;
+	scrollbar-arrow-color: #e5e6eb;
+	scrollbar-base-color: #fff;
+	scrollbar-Face-Color: #e5e6eb;
+	scrollbar-Track-Color: #fff;
+	scrollbar-DarkShadow-Color: #fff;
+	scrollbar-Highlight-Color: #fff;
+	scrollbar-Shadow-Color: #fff
+}
+
+.jview .scroll::-webkit-scrollbar {
+	width: 6px;
+	height: 6px
+}
+
+.jview .scroll::-webkit-scrollbar-track {
+	background: #fcfcfc
+}
+
+.jview .scroll::-webkit-scrollbar-thumb {
+	background: #f2f2f3
+}
+
+.jview_recommendation {
+	margin: 50px auto 0;
+	width: 960px
+}
+
+.offer .info {
+	font-size: 12px;
+	line-height: 16px
+}
+
+.offer .info .txt_bar {
+	display: inline-block;
+	margin: 0 2px;
+	width: 1px;
+	height: 10px;
+	color: #e9e9e9;
+	font-size: 0;
+	vertical-align: middle;
+	background: #e9e9e9
+}
+
+.offer .btn_scrap {
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	z-index: 3;
+	padding: 4px;
+	height: 24px
+}
+
+.offer .btn_scrap:before {
+	width: 17px;
+	height: 16px;
+	background-position: 0 -20px;
+	content: ""
+}
+
+.offer .btn_scrap.on {
+	background-position: -30px -20px
+}
+
+.offer .btn_interest {
+	padding: 3px;
+	width: 21px;
+	height: 19px;
+	vertical-align: middle
+}
+
+.offer .btn_interest:before {
+	display: block;
+	width: 15px;
+	height: 13px;
+	background-position: 0 0;
+	content: ""
+}
+
+.offer .btn_interest.on:before {
+	background-position: -30px 0
+}
+
+.offer .ico_offer {
+	display: inline-block;
+	margin-right: 4px;
+	width: 41px;
+	height: 16px;
+	font-size: 0;
+	line-height: 0;
+	vertical-align: top;
+	background:
+		url(//www.saraminimage.co.kr/sri/person/jobs_view/ico_offer.png)
+		no-repeat 0 0
+}
+
+.offer.list li {
+	display: none;
+	position: relative;
+	margin-bottom: 12px;
+	padding: 76px 20px 0 19px;
+	width: 100%;
+	height: 112px;
+	box-sizing: border-box
+}
+
+.offer.list li:before {
+	display: block;
+	position: absolute;
+	top: 23px;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	height: 89px;
+	border: 1px solid #cfd1d6;
+	border-radius: 4px;
+	box-sizing: border-box;
+	background: #fff;
+	content: ""
+}
+
+.offer.list li.offer:before {
+	border-left: 2px solid #7d90f0
+} /* AB test */
+.offer.list li.related:before {
+	background: #fcfcfd
+}
+
+.offer.list li .link {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box
+}
+
+.offer.list li .link>span {
+	display: block;
+	position: relative;
+	z-index: 2;
+	letter-spacing: -1px
+}
+
+.offer.list li .link .related {
+	display: inline-block;
+	float: right;
+	margin-right: 4px;
+	color: #222;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 18px;
+	text-align: right;
+	vertical-align: middle
+}
+
+.offer.list li .link .related strong {
+	color: #4876ef
+}
+
+.offer.list li .link .company {
+	overflow: hidden;
+	z-index: 1;
+	margin: 0 0 16px 4px;
+	color: #222;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 18px;
+	text-overflow: ellipsis;
+	white-space: nowrap
+}
+
+.offer.list li .link .related+.company {
+	width: 176px
+}
+
+.offer.list li .link .title {
+	overflow: hidden;
+	margin: 0 20px 1px;
+	color: #444;
+	font-size: 14px;
+	text-overflow: ellipsis;
+	white-space: nowrap
+}
+
+.offer.list li .link .title .ico_offer {
+	display: inline-block;
+	margin-right: 4px;
+	width: 41px;
+	height: 16px;
+	font-size: 0;
+	line-height: 0;
+	vertical-align: middle;
+	background:
+		url(//www.saraminimage.co.kr/sri/person/jobs_view/ico_offer.png)
+		no-repeat 0 0
+}
+
+.offer.list li .info {
+	margin: 0 20px
+}
+
+.offer.list li .sri_btn_xs {
+	display: inline-block;
+	float: right;
+	position: relative;
+	z-index: 3;
+	margin-top: 3px
+}
+
+.offer.list li .date {
+	display: inline-block;
+	float: right;
+	position: relative;
+	z-index: 3;
+	margin-top: 3px;
+	color: #666;
+	font-size: 11px;
+	line-height: 16px;
+	text-align: right;
+	vertical-align: top
+}
+
+.offer.list li .sri_btn_xs+.date {
+	margin-right: 8px
+}
+
+.offer.tbl {
+	width: 100%;
+	table-layout: fixed
+}
+
+.offer.tbl td {
+	padding: 14px 0 19px;
+	border-top: 1px solid #444;
+	border-bottom: 1px solid #ebebeb;
+	color: #666;
+	font-size: 14px;
+	letter-spacing: -1px;
+	vertical-align: top;
+	background: #fff
+}
+
+.offer.tbl .company {
+	padding: 14px 0 19px 30px;
+	line-height: 24px
+}
+
+.offer.tbl .link {
+	display: inline-block;
+	overflow: hidden;
+	color: #333;
+	text-overflow: ellipsis;
+	vertical-align: top;
+	white-space: nowrap
+}
+
+.offer.tbl .link:hover {
+	text-decoration: underline
+}
+
+.offer.tbl .company .link {
+	max-width: 128px
+}
+
+.offer.tbl .recruit .link {
+	max-width: 440px;
+	font-size: 16px
+}
+
+.offer.tbl .ico_offer {
+	display: block;
+	margin-top: 3px
+}
+
+.offer.tbl .recruit .txt_recruit {
+	display: block;
+	margin-bottom: 8px;
+	line-height: 24px
+}
+
+.offer.tbl .info {
+	display: block;
+	margin: 0
+}
+
+.offer.tbl .info>em {
+	margin-left: 8px;
+	font-size: 13px;
+	line-height: 16px;
+	vertical-align: middle
+}
+
+.offer.tbl .info>em:before {
+	margin: -1px 8px 0 0;
+	height: 12px;
+	background: #c5c5c5
+}
+
+.offer.tbl .info>em:first-child {
+	margin-left: 0
+}
+
+.offer.tbl .d_day {
+	float: left;
+	width: 128px;
+	box-sizing: border-box;
+	color: #888;
+	font-size: 13px;
+	line-height: 22px
+}
+
+.offer.tbl .d_day .date {
+	display: block;
+	color: #666;
+	font-size: 14px
+}
+
+.offer.tbl .sri_btn_sm {
+	float: left;
+	margin-top: 6px;
+	width: 90px
+}
+
+.offer.tbl .sri_btn_sm span {
+	width: 88px
+}
+
+.jview_wing .btn_help, .jview_recommendation .btn_help {
+	display: inline-block;
+	margin-top: 6px;
+	width: 16px;
+	height: 16px;
+	vertical-align: top
+}
+
+.jview_wing .btn_help span, .jview_recommendation .btn_help span {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute;
+	width: 1px;
+	height: 1px
+}
+
+.jview_wing .btn_help:after, .jview_recommendation .btn_help:after {
+	width: 16px;
+	height: 16px;
+	background-position: -100px -150px;
+	content: ""
+}
+
+.jview_wing .toolTip em, .jview_recommendation .toolTip em {
+	color: #4876ef
+}
+
+.jview_wing .btn_help:hover+.toolTip, .jview_recommendation .btn_help:hover+.toolTip
+	{
+	display: block
+}
+
+.jview_wing .toolTip {
+	margin: 10px 0 0 -178px;
+	width: 220px;
+	font-weight: normal
+}
+
+.jview_recommendation .toolTip {
+	margin: 10px 0 0 -125px;
+	width: 220px;
+	font-weight: normal
+}
+
+.jview_wing .toolTip .tail.tail_top_right {
+	right: 73px
+}
+
+
+/* TOP 버튼 */
+.jview_top {
+	display: none;
+	position: fixed;
+	left: 50%;
+	bottom: 20px;
+	z-index: 100;
+	margin-left: 645px;
+	padding: 7px 0;
+	width: 40px;
+	height: 40px;
+	border: 1px solid #cbcbcb;
+	box-sizing: border-box;
+	background: #fff
+}
+
+.jview_top:before {
+	display: block;
+	margin: 0 0 2px 11px;
+	width: 17px;
+	height: 10px;
+	background-position: -150px 0;
+	content: ""
+}
+
+.jview_top span {
+	display: block;
+	color: #444;
+	font-family: dotum, gulim, sans-serif;
+	font-size: 11px;
+	line-height: 13px
+}
+
+/* 공고 타이틀 & 플로팅 공통 */
+.jv_header {
+	position: relative;
+	padding-right: 270px;
+	color: #222;
+	font-size: 0;
+	letter-spacing: -1px;
+	line-height: 28px;
+	min-height: 74px
+}
+
+.jv_header .inner {
+	-webkit-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	transform: translateZ(0);
+	will-change: transform
+}
+
+.jv_header .tag {
+	display: inline-block;
+	position: relative;
+	margin-right: 8px;
+	padding-right: 9px;
+	height: 28px;
+	box-sizing: border-box;
+	color: #888;
+	font-size: 16px;
+	line-height: 23px;
+	text-align: center;
+	vertical-align: middle
+}
+
+.jv_header .tag:after {
+	display: block;
+	position: absolute;
+	top: 5px;
+	right: 0;
+	width: 1px;
+	height: 16px;
+	background: #e4e4e4;
+	content: ""
+}
+
+.jv_header .company {
+	display: inline-block;
+	overflow: hidden;
+	margin-right: 8px;
+	padding-right: 2px;
+	max-width: 380px;
+	height: 28px;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 23px;
+	text-overflow: ellipsis;
+	vertical-align: middle;
+	white-space: nowrap
+}
+
+.jv_header .tag+.company {
+	max-width: 420px
+}
+
+.jv_header .tit_job {
+	margin-top: 4px;
+	font-size: 26px;
+	font-weight: bold;
+	letter-spacing: -1.5px;
+	line-height: 34px;
+	width:800px;
+}
+
+.jv_header .tit_job>.ico_offer {
+	display: inline-block;
+	margin: -5px 4px 0 0;
+	width: 52px;
+	height: 24px;
+	font-size: 0;
+	line-height: 0;
+	vertical-align: middle;
+	background:
+		url(//www.saraminimage.co.kr/sri/person/jobs_view/ico_offer2_200402.png)
+		no-repeat 0 0
+} /* WMG-25511 추가 */
+.jv_header .btn_jview.btn_careers {
+	margin-left: 4px
+}
+
+.jv_header .btn_jview.btn_careers .num {
+	font-weight: bold;
+	color: #444
+}
+
+.jv_header .btn_scrap {
+	position: absolute;
+	top: 14px;
+	right: 15px;
+}
+
+.jv_header .btn_apply {
+	position: absolute;
+	top: 4px;
+	right: 0;
+	width: 185px;
+	text-align: center
+}
+
+.jv_header .btn_apply .sri_btn_lg {
+	position: absolute;
+	top: 10px;
+	z-index: 1
+}
+
+.jv_header .btn_apply .dday {
+	display: inline-block;
+	position: relative;
+	z-index: 2;
+	padding: 0 8px;
+	height: 21px;
+	border: 1px solid #ff7673;
+	border-radius: 21px;
+	color: #ff6d6a;
+	font-size: 12px;
+	letter-spacing: -1px;
+	line-height: 18px;
+	background: #fff
+}
+
+.jv_header_float .jv_header .tag {
+	font-size: 13px
+}
+
+.jv_header_float .jv_header .tag:after {
+	top: 7px;
+	height: 13px
+}
+
+.jv_header_float .jv_header .company {
+	color: #666;
+	font-size: 15px;
+	line-height: 25px
+}
+
+.jv_header_float .jv_header .tit_job {
+	overflow: hidden;
+	margin-top: 4px;
+	width: 100%;
+	font-size: 19px;
+	line-height: 22px;
+	text-overflow: ellipsis;
+	white-space: nowrap
+}
+
+.jv_header_float .jv_header {
+	padding-top: 14px
+}
+
+.jv_header_float .jv_header .btn_scrap {
+	top: 16px
+}
+
+.jv_header_float .jv_header .btn_apply {
+	top: 6px
+}
+/* WMG-23274 추가 */
+.jv_header .ico_recuite_method {
+	display: inline-block;
+	margin: 6px 13px 0 0;
+	padding: 4px 12px 6px;
+	height: 26px;
+	border-radius: 14px;
+	box-sizing: border-box;
+	font-size: 13px;
+	line-height: 15px;
+	color: #fff;
+	background: #444;
+	vertical-align: top
+}
+
+.jv_header .ico_recuite_method:before {
+	display: inline-block;
+	vertical-align: top;
+	content: ""
+}
+
+.jv_header .ico_blind:before {
+	margin: 2px 4px 0 0;
+	width: 18px;
+	height: 14px;
+	background:
+		url(//www.saraminimage.co.kr/sri/person/jobs_view/ico_blind.png)
+		no-repeat 0 0
+}
+
+.jv_header .ico_form:before {
+	margin: 1px 3px 0 0;
+	width: 16px;
+	height: 15px;
+	background:
+		url(//www.saraminimage.co.kr/sri/person/jobs_view/ico_form.png)
+		no-repeat 0 0
+}
+
+.jview_floating .jv_header .ico_recuite_method {
+	margin: 0 9px 0 0
+}
+
+/* WMG-28101 추가 */
+.jv_summary .meta .noti_jumpit {
+	position: absolute;
+	left: 0;
+	top: 12px;
+	font-size: 12px;
+	line-height: 16px;
+	color: #101c41;
+	letter-spacing: -0.5px
+}
+
+.jv_summary .meta .noti_jumpit:before {
+	display: inline-block;
+	margin-top: -1px;
+	vertical-align: top;
+	content: "["
+}
+
+.jv_summary .meta .noti_jumpit:after {
+	display: inline-block;
+	margin: -1px 0 0 2px;
+	vertical-align: top;
+	content: "]"
+}
+
+.jv_summary .meta .noti_jumpit .txt_jumpit:before {
+	display: inline-block;
+	margin: 2px 2px 0 3px;
+	width: 40px;
+	height: 13px;
+	overflow: hidden;
+	background: url(//www.saraminimage.co.kr/sri/common/img/img_jumpit.png)
+		no-repeat 0 0;
+	vertical-align: top;
+	content: ""
+}
+/* //WMG-28101 추가 */
+
+/* 플로팅 */
+.jview_floating.jview {
+	display: none;
+	position: fixed;
+	top: 4px;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	height: 96px;
+	background: #fff;
+	box-shadow: 0 0 12px 0 rgba(100, 107, 113, 0.3)
+}
+
+.jview_floating.on {
+	display: block
+}
+
+.jview_floating .jv_header_float {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -585px;
+	width: 870px
+}
+
+.jv_util {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: 350px;
+	padding-top: 28px;
+	width: 280px
+}
+
+.jv_util .links {
+	font-size: 0
+}
+
+.jv_util .links a {
+	display: inline-block;
+	position: relative;
+	padding: 0;
+	color: #949494;
+	font-size: 13px;
+	letter-spacing: -1px;
+	line-height: 15px;
+	text-align: center;
+	vertical-align: top
+}
+
+.jv_util .links.person a {
+	padding: 0 9px
+}
+
+.jv_util .links a+a {
+	margin-left: 28px
+}
+
+.jv_util .links a+a:before {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -15px;
+	width: 1px;
+	height: 35px;
+	background: #eeefef;
+	content: ""
+}
+
+.jv_util .links.login {
+	padding-right: 31px;
+	text-align: center
+}
+
+.jv_util .links.login a+a:before {
+	top: 10px;
+	height: 14px
+}
+
+.jv_util .links a strong {
+	display: block;
+	margin-top: 5px;
+	color: #444;
+	font-size: 15px;
+	letter-spacing: 0
+}
+
+.jv_util .links a span {
+	display: inline-block;
+	line-height: 32px;
+	vertical-align: top
+}
+
+.jv_util .links a.text {
+	line-height: 35px
+}
+
+.jv_util .links a.text span {
+	line-height: 17px
+}
+
+.jv_util .links a:hover strong {
+	text-decoration: underline
+}
+
+.jv_util .menu {
+	position: absolute;
+	top: 30px;
+	right: 0;
+	width: 31px;
+	height: 31px
+}
+
+.jv_util .menu .btn_menu, .jv_util .menu .btn_close {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 31px;
+	height: 31px;
+	border-radius: 31px
+}
+
+.jv_util .menu .btn_menu {
+	padding-left: 9px;
+	background: #8694b7
+}
+
+.jv_util .menu .btn_menu:before, .jv_util .menu .btn_menu:after,
+	.jv_util .menu .btn_menu span {
+	display: block;
+	overflow: hidden;
+	width: 13px;
+	height: 2px;
+	font-size: 0;
+	line-height: 0;
+	background: #fff;
+	content: ""
+}
+
+.jv_util .menu .btn_menu span {
+	margin: 3px 0
+}
+
+.jv_util .menu .btn_close {
+	display: none;
+	background: #555
+}
+
+.jv_util .menu .btn_close span {
+	display: block;
+	overflow: hidden;
+	position: relative;
+	margin: 0 auto;
+	width: 10px;
+	height: 10px;
+	font-size: 0;
+	line-height: 0
+}
+
+.jv_util .menu .btn_close span:before, .jv_util .menu .btn_close span:after
+	{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 12px;
+	height: 2px;
+	background-color: #fff;
+	content: ""
+}
+
+.jv_util .menu .btn_close span:before {
+	-webkit-transform: translate(-50%, -50%) rotate(45deg);
+	-ms-transform: translate(-50%, -50%) rotate(45deg);
+	transform: translate(-50%, -50%) rotate(45deg)
+}
+
+.jv_util .menu .btn_close span:after {
+	-webkit-transform: translate(-50%, -50%) rotate(135deg);
+	-ms-transform: translate(-50%, -50%) rotate(135deg);
+	transform: translate(-50%, -50%) rotate(135deg)
+}
+
+.jv_util .menu .layer_menu {
+	display: none;
+	position: absolute;
+	top: 47px;
+	right: 0;
+	width: 208px;
+	border: 1px solid #cfd1d6;
+	box-sizing: border-box;
+	background: #fff;
+	box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.13)
+}
+
+.jv_util .menu .layer_menu:before {
+	position: absolute;
+	top: -13px;
+	right: 12px;
+	width: 12px;
+	height: 13px;
+	background-position: -90px -20px;
+	content: ""
+}
+
+.jv_util .menu .layer_menu .nav {
+	padding: 13px 0 16px
+}
+
+.jv_util .menu .layer_menu .nav li {
+	line-height: 32px;
+	text-align: center
+}
+
+.jv_util .menu .layer_menu .nav li a {
+	color: #222;
+	font-size: 15px;
+	letter-spacing: -1px
+}
+
+.jv_util .menu .layer_menu .nav li a:hover {
+	color: #5b76f5;
+	font-weight: bold
+}
+
+.jv_util .menu .layer_menu .nav li a:hover:before {
+	display: inline-block;
+	margin-right: 6px;
+	content: "-"
+}
+
+.jv_util .menu .layer_menu .nav li a:hover:after {
+	display: inline-block;
+	margin-left: 6px;
+	content: "-"
+}
+
+.jv_util .menu .layer_menu .lately {
+	padding: 16px 12px 15px;
+	border-top: 1px solid #f1f1f3;
+	font-size: 0;
+	text-align: center
+}
+
+.jv_util .menu .layer_menu .lately span {
+	display: block;
+	margin: 0 auto 4px;
+	width: 70px;
+	height: 21px;
+	border: 1px solid #e7e8ea;
+	border-radius: 21px;
+	box-sizing: border-box;
+	color: #949494;
+	font-size: 12px;
+	letter-spacing: -1px;
+	line-height: 16px;
+	text-align: center
+}
+
+.jv_util .menu .layer_menu .lately li {
+	display: inline-block;
+	margin: 0 3px;
+	line-height: 18px;
+	vertical-align: middle
+}
+
+.jv_util .menu .layer_menu .lately li a {
+	color: #666;
+	font-size: 12px;
+	font-weight: normal;
+	letter-spacing: -1px;
+	text-decoration: underline
+}
+
+.jv_util .menu.on .btn_menu {
+	display: none
+}
+
+.jv_util .menu.on .btn_close {
+	display: block
+}
+
+.jv_util .menu.on .layer_menu {
+	display: block
+}
+
+/* 팝업뷰 */
+#sri_layout_popup {
+	min-width: 960px
+}
+
+#sri_layout_popup .wrap_jview {
+	padding: 0
+}
+
+#sri_layout_popup .jv_remote {
+	top: 39px;
+	margin-left: -549px
+}
+
+#sri_layout_popup .jv_remote.shrink {
+	margin-left: -472px
+}
+
+#sri_layout_popup .jv_remote.fix_pop {
+	top: 99px
+}
+
+#sri_layout_popup .jview_floating .jv_header_float {
+	margin-left: -435px
+}
+
+/* 개인 마이페이지 */
+#pm_contents {
+	padding: 0;
+	width: 100%
+}
+
+#pm_contents .jv_remote {
+	top: 134px
+}
+
+#pm_contents .jview_wing:after {
+	display: none
+}
+
+#pm_contents .jview_wing .inner {
+	padding: 35px 0 25px
+}
+
+#btn_goto_top {
+	display: none !important
+}
+
+/* 공고뷰 컨텐츠 */
+.wrap_jview {
+	position: relative;
+	z-index: 1;
+	margin: 0 auto;
+	width: 960px
+}
+
+.jview {
+	position: relative
+}
+
+.jview+.jview {
+	margin-top: 29px
+}
+
+.jview>.wrap_jv_cont {
+	position: relative;
+	padding: 40px 44px 100px;
+	border: 1px solid #e5e6eb;
+	background: #fff
+}
+
+.jview>.jv_ads {
+	overflow: hidden;
+	margin: 29px auto 0;
+	width: 728px;
+	height: 90px
+}
+
+.jv_cont {
+	position: relative;
+	z-index: 1;
+	margin-top: 50px
+}
+
+.jv_cont>.cont {
+	position: relative;
+	letter-spacing: -1px
+}
+
+.jv_cont>.box {
+	padding: 29px 29px 0;
+	border: 1px solid #ebebeb;
+	border-top-color: #999
+}
+
+.iframe_content {
+	display: block;
+	margin: 0 auto;
+	width: 870px
+}
+
+.wrap_jv_header {
+	padding-bottom: 30px;
+	min-height: 75px
+}
+
+.wrap_jv_header+.jv_cont {
+	margin-top: 0
+}
+/* WMG-25244 */
+.wrap_recommend_slide.type02 {
+	margin-top: 50px
+}
+
+.wrap_recommend_slide.type02 .list_recomm {
+	height: 140px
+}
+
+.wrap_recommend_slide.type02 .list_recomm li {
+	width: 291px;
+	height: 140px;
+	padding: 20px 24px
+}
+
+.wrap_recommend_slide.type02 .list_recomm li:nth-of-type(4n) {
+	width: 291px
+}
+
+.wrap_recommend_slide.type02 .list_recomm li:nth-of-type(3n) {
+	width: 290px
+}
+
+.wrap_recommend_slide.type02 .list_recomm .btn_scrap {
+	padding: 0;
+	border: none;
+	bottom: 20px;
+	left: 24px
+}
+
+.wrap_recommend_slide.type02 .list_recomm .recomm_desc {
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap
+}
+
+.wrap_recommend_slide.type02 .list_recomm .recruit_func {
+	bottom: 18px;
+	right: 24px
+}
+
+.wrap_recommend_slide.hot_slide {
+	z-index: 1
+}
+
+/* 메인공고 */
+.jv_summary .col {
+	float: left;
+	padding: 25px 0 30px;
+	width: 420px;
+	border-top: 1px solid #e5e6eb;
+	font-size: 14px;
+	letter-spacing: -0.5px;
+	height: 180px;
+}
+
+.jv_summary .col+.col {
+	margin-left: 30px
+}
+
+.jv_summary .col>dl {
+	display: block;
+	position: relative;
+	margin-top: 5px;
+	padding-left: 86px;
+	min-height: 22px
+}
+
+.jv_summary .col>dl:first-child {
+	margin-top: 0
+}
+
+.jv_summary .col>dl>dt {
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #888;
+	line-height: 23px
+}
+
+.jv_summary .col>dl>dd {
+	color: #444;
+	line-height: 23px
+}
+
+.jv_summary .col>dl>dd strong {
+	color: #4c78ea;
+	font-weight: normal
+}
+
+.jv_summary .col>dl>dd .etc {
+	color: #888;
+	font-size: 13px
+}
+
+.jv_summary .col>dl>dd>ul {
+	display: block;
+	padding: 2px 0 3px;
+	font-size: 13px
+}
+
+.jv_summary .col>dl>dd>ul>li {
+	position: relative;
+	margin-top: 4px;
+	padding-left: 48px;
+	line-height: 18px
+}
+
+.jv_summary .col>dl>dd>ul>li:first-child {
+	margin-top: 0
+}
+
+.jv_summary .col>dl>dd>ul>li>span {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 40px;
+	color: #888;
+	line-height: 18px
+}
+
+.jv_summary .col .btn_jview {
+	padding: 0 8px 3px;
+	height: 23px;
+	border: 1px solid #dbdcde;
+	vertical-align: top
+}
+
+.jv_summary .col .btn_tooltip:after {
+	margin: 8px 0 0 6px;
+	width: 7px;
+	height: 4px;
+	vertical-align: top;
+	background-position: -120px -70px;
+	content: ""
+}
+
+.jv_summary .col .opened .btn_tooltip:after {
+	margin-top: 7px;
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg)
+}
+
+.jv_summary .col .btn_move_map:after {
+	margin: 6px 0 0 6px;
+	width: 4px;
+	height: 7px;
+	vertical-align: top;
+	background-position: -150px -70px;
+	content: ""
+}
+
+.jv_summary .col .btn_jview span {
+	color: #666;
+	font-size: 12px
+}
+
+.jv_summary .meta {
+	clear: both;
+	position: relative;
+	padding-top: 12px;
+	border-top: 1px solid #e5e6eb;
+	font-size: 0;
+	line-height: 18px;
+	text-align: right
+}
+
+.jv_summary .meta:before {
+	display: block;
+	position: absolute;
+	top: -1px;
+	left: 420px;
+	width: 30px;
+	height: 1px;
+	background: #fff;
+	content: ""
+}
+/* WMG-28101 수정 */
+.jv_summary .meta .list_meta>li {
+	display: inline-block;
+	position: relative;
+	color: #888;
+	font-size: 13px
+}
+
+.jv_summary .meta .list_meta>li strong {
+	color: #666;
+	font-weight: bold;
+	letter-spacing: 0
+}
+
+.jv_summary .meta .list_meta>li+li {
+	margin-left: 8px;
+	padding-left: 10px
+}
+
+.jv_summary .meta .list_meta>li+li:before {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	margin-top: -1px;
+	width: 2px;
+	height: 2px;
+	background: #bebfc3;
+	content: ""
+}
+/* //WMG-28101 수정 */
+.jv_summary .meta .share {
+	margin-left: 0;
+	vertical-align: top
+}
+
+.jv_summary .meta .share .btn_share {
+	padding: 0 0 3px;
+	height: 18px;
+	border: 0;
+	color: #888
+}
+
+.jv_summary .meta .share .list_share {
+	top: 28px
+}
+
+.jv_summary .meta .btn_report {
+	color: #666
+}
+
+.jv_summary .meta .txt_noti {
+	position: absolute;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	color: #888;
+	font-size: 13px;
+	letter-spacing: -1px;
+	line-height: 17px
+}
+
+.jv_summary .meta .txt_noti:before {
+	display: none
+}
+
+.jv_summary .btns {
+	margin-top: 15px;
+	text-align: center
+}
+
+.jv_summary .btns .btn_modify {
+	margin: 0 3px;
+	padding: 0 13px 3px;
+	height: 32px;
+	border: 1px solid #e4e4e4;
+	background: #f8f8f8
+} /* WMG-23274 수정 */
+.jv_summary .btns .btn_modify span {
+	color: #444;
+	font-size: 14px
+}
+
+.jv_summary .btns .btn_modify:before {
+	margin: 5px 10px 0 0;
+	width: 14px;
+	height: 14px;
+	vertical-align: top;
+	background-position: -180px -70px;
+	content: ""
+}
+
+.jv_summary .btns .btn_modify_type2:before {
+	display: none
+} /* WMG-23274 추가 */
+.jv_summary .toolTip {
+	margin: 10px 0 0 -118px;
+	width: 262px
+}
+
+.jv_summary .preferred .toolTip {
+	margin: 10px 0 0 0
+}
+
+/* 상세요강 */
+.jv_detail {
+	z-index: auto;
+	margin-top: 24px
+}
+
+/* 더보기 버튼 관련 */
+.jv_cont.expand {
+	z-index: 2
+}
+
+.jv_cont .cont_more {
+	display: none
+}
+
+.jv_cont .btn_more_cont {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 40px;
+	border: 1px solid #ebebeb;
+	border-top: 0;
+	box-sizing: border-box;
+	color: #666;
+	font-size: 14px;
+	letter-spacing: -1px;
+	text-decoration: none;
+	background: #fff
+}
+
+.jv_cont .btn_more_cont .spr_jview:after {
+	margin: 6px 0 0 9px;
+	width: 13px;
+	height: 8px;
+	background-position: -180px -120px;
+	content: "";
+	opacity: 0.5
+}
+
+.jv_cont.expand .btn_more_cont {
+	position: absolute
+}
+
+.jv_cont.expand .btn_more_cont .spr_jview:after {
+	background-position: -180px -90px
+}
+
+.jv_cont .layer_group {
+	overflow: hidden;
+	position: relative;
+	width: 868px;
+	border: 1px solid #ebebeb;
+	border-top-color: #999;
+	background: #fff
+}
+
+.jv_cont .layer_group .layer {
+	width: 868px;
+	box-sizing: border-box
+}
+
+.jv_cont.expand .cont_more {
+	display: block
+}
+
+.jv_cont.expand .layer_group {
+	overflow-y: auto;
+	position: absolute;
+	top: 0;
+	left: 0
+}
+
+.jv_cont.expand .layer_group .layer {
+	height: auto;
+	max-height: none
+}
+
+.jv_cont.expand .layer_group .layer .ellipsis {
+	overflow: visible;
+	max-height: none
+}
+
+/* 복리후생 */
+.jv_benefit .layer_group .layer {
+	padding: 19px 9px;
+	max-height: 114px
+}
+
+.jv_benefit.expand .layer_group {
+	max-height: 342px
+}
+
+.jv_benefit .row {
+	display: table;
+	width: 100%;
+	table-layout: fixed
+}
+
+.jv_benefit .row+.row {
+	margin-top: 11px
+}
+
+.jv_benefit .row .col {
+	display: table-cell;
+	padding: 0 20px;
+	font-size: 14px;
+	line-height: 22px
+}
+
+.jv_benefit .row .col dt {
+	margin-bottom: 6px;
+	color: #444;
+	font-weight: bold
+}
+
+.jv_benefit .row .col dd {
+	color: #888
+}
+
+.jv_benefit .ellipsis {
+	overflow: hidden;
+	max-height: 44px
+}
+
+/* 근무지 위치 */
+.jv_location .wrap_mapapi {
+	margin: 0 0 59px;
+	height: 300px
+}
+
+.jv_location .address {
+	margin-bottom: 30px
+}
+
+.jv_location .address>span {
+	display: block;
+	position: relative;
+	padding-left: 24px;
+	color: #444;
+	font-size: 15px;
+	line-height: 20px
+}
+
+.jv_location .address>span:before {
+	position: absolute;
+	top: 2px;
+	left: 0;
+	width: 14px;
+	height: 18px;
+	content: ""
+}
+
+.jv_location .txt_adr:before {
+	background-position: -120px -40px
+}
+
+.jv_location .txt_subway {
+	margin-top: 6px
+}
+
+.jv_location .txt_subway:before {
+	background-position: -150px -40px
+}
+
+.jv_location .txt_commute {
+	margin-top: 6px
+}
+
+.jv_location .txt_commute:before {
+	background-position: -60px -170px
+}
+
+.jv_location .btn_mapview {
+	display: block;
+	width: 100%;
+	height: 37px;
+	border: 0;
+	border-top: 1px solid #ebebeb;
+	color: #666;
+	font-size: 15px;
+	letter-spacing: -1px;
+	background-color: #fff
+}
+
+.jv_location .btn_mapview>span:before {
+	margin-right: 8px;
+	width: 18px;
+	height: 18px;
+	background-position: -180px -40px;
+	content: ""
+}
+
+.jv_location .layer_map {
+	display: none;
+	top: -1px;
+	z-index: 20;
+	margin-left: -435px;
+	padding: 35px 29px 30px
+}
+
+.jv_location.expand {
+	z-index: 5
+}
+
+.jv_location.expand .layer_map {
+	display: block
+}
+
+.jv_location .layer_map .container_map {
+	width: 810px;
+	height: 300px
+}
+
+/* subway line */
+/* 수도권 */
+.jv_location .subway_line {
+	display: inline-block;
+	margin: 2px 6px 0;
+	padding: 2px 5px 3px;
+	color: #fff;
+	font-size: 10px;
+	letter-spacing: -0.5px;
+	line-height: 11px;
+	border-radius: 8px;
+	vertical-align: top
+}
+
+.jv_location .subway_line101 {
+	background-color: #0052a4
+}
+
+.jv_location .subway_line102 {
+	background-color: #009d3e
+}
+
+.jv_location .subway_line103 {
+	background-color: #ef7c1c
+}
+
+.jv_location .subway_line104 {
+	background-color: #00a5de
+}
+
+.jv_location .subway_line105 {
+	background-color: #996cac
+}
+
+.jv_location .subway_line106 {
+	background-color: #cd7c2f
+}
+
+.jv_location .subway_line107 {
+	background-color: #747f00
+}
+
+.jv_location .subway_line108 {
+	background-color: #ea545d
+}
+
+.jv_location .subway_line109 {
+	background-color: #bb8336
+}
+
+.jv_location .subway_line201 {
+	padding: 2px 6px 3px;
+	background-color: #f5a200
+} /*수인분당*/
+.jv_location .subway_line301 {
+	padding: 2px 6px 3px;
+	background-color: #7ca8d5
+} /*인천1호선*/
+.jv_location .subway_line302 {
+	padding: 2px 6px 3px;
+	background-color: #ed8b00
+} /*인천2호선*/
+.jv_location .subway_line1101 {
+	padding: 2px 6px 3px;
+	background-color: #d4003b
+} /*신분당*/
+.jv_location .subway_line1001 {
+	padding: 2px 6px 3px;
+	background-color: #77c4a3
+} /*경의중앙*/
+.jv_location .subway_line1201 {
+	padding: 2px 6px 3px;
+	background-color: #0c8e72
+} /*경춘*/
+.jv_location .subway_line901 {
+	padding: 2px 6px 3px;
+	background-color: #0090d2
+} /*공항철도*/
+.jv_location .subway_line202 {
+	padding: 2px 6px 3px;
+	background-color: #ff9d27
+} /*의정부*/
+.jv_location .subway_line1301 {
+	padding: 2px 6px 3px;
+	background-color: #6fb245
+} /*에버라인*/
+.jv_location .subway_line203 {
+	padding: 2px 6px 3px;
+	background-color: #003da5
+} /*경강선*/
+.jv_location .subway_line303 {
+	padding: 2px 6px 3px;
+	background-color: #ffcd12
+} /*자기부상*/
+.jv_location .subway_line1501 {
+	padding: 2px 6px 3px;
+	background-color: #b0ce18
+} /*우이신설*/
+.jv_location .subway_line1601 {
+	padding: 2px 6px 3px;
+	background-color: #81a914
+} /*서해*/
+.jv_location .subway_line1701 {
+	padding: 2px 6px 3px;
+	background-color: #a17800
+} /*김포골드*/
+/* 부산 */
+.jv_location .subway_line401 {
+	background-color: #0052a4
+}
+
+.jv_location .subway_line402 {
+	background-color: #81bf48
+}
+
+.jv_location .subway_line403 {
+	background-color: #bb8c00
+}
+
+.jv_location .subway_line404 {
+	background-color: #217dcb
+}
+
+.jv_location .subway_line405 {
+	padding: 2px 6px 3px;
+	background-color: #8652a1
+} /*김해부산*/
+.jv_location .subway_line406 {
+	padding: 2px 6px 3px;
+	background-color: #003da5
+} /*동해*/
+/* 대구 */
+.jv_location .subway_line501 {
+	background-color: #d93f5c
+}
+
+.jv_location .subway_line502 {
+	background-color: #00aa80
+}
+
+.jv_location .subway_line503 {
+	background-color: #ffb100
+}
+/* 광주 */
+.jv_location .subway_line601 {
+	background-color: #009088
+}
+/* 대전 */
+.jv_location .subway_line801 {
+	background-color: #007448
+}
+
+/* 접수기간 및 방법 */
+.jv_howto {
+	padding-bottom: 28px
+}
+
+.jv_howto .cont.box {
+	display: table;
+	padding: 0;
+	border-right: 0
+}
+
+.jv_howto .status {
+	display: table-cell;
+	position: relative;
+	z-index: 2;
+	padding: 22px 0 30px;
+	width: 289px;
+	box-sizing: border-box;
+	text-align: center;
+	vertical-align: middle
+}
+
+.jv_howto .status .inner {
+	display: inline-block
+}
+
+.jv_howto .status .copy {
+	color: #666;
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 35px
+}
+
+.jv_howto .status .copy.once {
+	margin-bottom: 4px;
+	font-weight: normal;
+	line-height: 26px
+}
+
+.jv_howto .status .copy strong {
+	color: #4876ef;
+	font-weight: bold
+}
+
+.jv_howto .status .copy.end {
+	color: #949494
+}
+
+.jv_howto .status .copy_sub {
+	margin-bottom: 4px;
+	color: #888;
+	font-size: 14px;
+	line-height: 21px
+}
+
+.jv_howto .info_period {
+	padding: 13px 45px 0;
+	text-align: left
+}
+
+.jv_howto .info_period:after {
+	display: table;
+	clear: both;
+	content: "";
+	table-layout: fixed
+}
+
+.jv_howto .info_period dt {
+	float: left;
+	width: 73px;
+	height: 26px;
+	border: 1px solid #cdcdcd;
+	border-radius: 26px;
+	box-sizing: border-box;
+	color: #888;
+	font-size: 14px;
+	line-height: 22px;
+	text-align: center
+}
+
+.jv_howto .info_period dd {
+	float: right;
+	padding: 1px 0;
+	width: 116px;
+	height: 26px;
+	box-sizing: border-box;
+	font-size: 15px;
+	letter-spacing: 0;
+	line-height: 22px;
+	text-align: center
+}
+
+.jv_howto .info_period dt.end, .jv_howto .info_period dt.end+dd {
+	margin-top: 6px;
+	border-color: #4876ef;
+	color: #4876ef
+}
+
+.jv_howto .status .copy.end+.info_period dt, .jv_howto .status .copy.end+.info_period dd
+	{
+	border-color: #cdcdcd;
+	color: #949494
+}
+
+.jv_howto .status .sri_btn_lg {
+	margin: 0 auto
+}
+
+.jv_howto .status .info_period+button, .jv_howto .status .info_period+a
+	{
+	margin-top: 25px
+}
+
+.jv_howto .info_timer {
+	padding-top: 5px;
+	height: 56px;
+	color: #4876ef;
+	font-size: 0;
+	font-weight: bold;
+	line-height: 36px;
+	text-align: center
+}
+
+.jv_howto .info_timer .txt {
+	display: block;
+	height: 20px;
+	font-size: 15px;
+	font-weight: normal;
+	line-height: 20px
+}
+
+.jv_howto .info_timer .day, .jv_howto .info_timer .time {
+	display: inline-block;
+	font-size: 28px;
+	vertical-align: bottom
+}
+
+.jv_howto .info_timer .txt_day {
+	display: none;
+	margin-right: 8px;
+	font-size: 20px;
+	vertical-align: bottom
+}
+
+.jv_howto .info_timer .day+.txt_day {
+	display: inline-block
+}
+
+.jv_howto .guide {
+	display: table-cell;
+	position: relative;
+	z-index: 2;
+	padding: 22px 30px;
+	width: 580px;
+	box-sizing: border-box;
+	font-size: 14px;
+	background: #f8f9fa
+}
+
+.jv_howto .guide:after {
+	display: table;
+	clear: both;
+	content: "";
+	table-layout: fixed
+}
+
+.jv_howto .guide>dt {
+	display: block;
+	float: left;
+	margin-top: 4px;
+	width: 88px;
+	color: #888;
+	line-height: 28px
+}
+
+.jv_howto .guide>dt:first-of-type {
+	margin-top: 0
+}
+
+.jv_howto .guide>dd {
+	display: block;
+	float: left;
+	margin-top: 4px;
+	width: 432px;
+	min-height: 28px;
+	color: #666;
+	line-height: 28px
+}
+
+.jv_howto .guide>dd:first-of-type {
+	margin-top: 0;
+    width: 300px;
+    margin-left: 45px;
+}
+
+.jv_howto .guide>dd.manager {
+	color: #444;
+	font-weight: bold
+}
+
+.jv_howto .guide>dd.info {
+	letter-spacing: 0;
+    margin-left: 29px;
+    width: 300px;
+}
+
+.jv_howto .guide>dd.method>button, .jv_howto .guide>dd.method>a,
+	.jv_howto .guide>dd.method>span {
+	color: #444;
+	letter-spacing: -1px
+}
+
+.jv_howto .guide>dd.method>button, .jv_howto .guide>dd.method>a {
+	display: inline-block;
+	overflow: visible;
+	line-height: inherit;
+	text-decoration: underline
+}
+
+.jv_howto .guide>dd.template {
+	color: #444
+}
+
+.jv_howto .guide>dd.template .toolTipWrap {
+	vertical-align: top
+}
+
+.jv_howto .interview .toolTipWrap {
+	margin-left: 8px;
+	vertical-align: top
+}
+
+.jv_howto .btn_tooltip:after {
+	margin: 7px 0 0 6px;
+	width: 9px;
+	height: 6px;
+	vertical-align: top;
+	background-position: -30px -150px;
+	content: ""
+}
+
+.jv_howto .opened .btn_tooltip:after {
+	margin-top: 7px;
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg)
+}
+
+.jv_howto .btn_link:after {
+	margin: 5px 0 0 6px;
+	width: 6px;
+	height: 9px;
+	vertical-align: top;
+	background-position: 0 -150px;
+	content: ""
+}
+
+.jv_howto .toolTip {
+	margin: 10px 0 0 -84px;
+	width: 222px
+}
+
+.jv_howto .toolTip .attachment {
+	margin: -4px 0 0 -4px;
+	font-size: 0
+}
+
+.jv_howto .toolTip .attachment a {
+	margin: 4px 0 0 4px
+}
+
+.jv_howto .btn_link {
+	margin-left: 8px
+}
+
+.jv_howto .btn_template {
+	margin-right: 8px;
+	text-decoration: underline
+}
+
+.jv_howto .btn_template:after, .jv_howto .btn_download:after {
+	margin: 7px 0 0 6px;
+	width: 13px;
+	height: 11px;
+	vertical-align: top;
+	background-position: -80px -150px;
+	content: ""
+}
+
+.jv_howto .btn_template:after {
+	margin-top: 9px
+}
+
+.jv_howto .btn_download[target="_blank"]:after {
+	margin: 7px 1px 0 7px;
+	width: 11px;
+	height: 11px;
+	background-position: -60px -150px
+}
+
+.jv_howto .btn_download span {
+	display: inline-block;
+	overflow: hidden;
+	width: 70px;
+	text-overflow: ellipsis;
+	white-space: nowrap
+}
+
+.jv_howto .noti {
+	position: absolute;
+	bottom: -28px;
+	left: 0;
+	padding-left: 20px;
+	color: #888;
+	font-size: 13px;
+	line-height: 28px
+}
+
+.jv_howto .noti:before {
+	display: block;
+	position: absolute;
+	top: 8px;
+	left: 0;
+	width: 14px;
+	height: 14px;
+	border-radius: 14px;
+	color: #fff;
+	font-size: 9px;
+	font-weight: bold;
+	line-height: 14px;
+	text-align: center;
+	background: #e1e1e1;
+	content: "!"
+}
+
+.jv_cont.expired .btn_modify, .jv_cont.expired .btn_interest, .jv_howto .status .btn_scrap,
+	.jv_howto .status .btn_interest {
+	display: block;
+	margin: 0 auto;
+	padding: 0 0 7px;
+	width: 185px;
+	height: 60px;
+	border: 1px solid #e9e9e9;
+	border-radius: 2px;
+	letter-spacing: -2px;
+	background: #fff
+}
+
+.jv_cont.expired .btn_modify span, .jv_cont.expired .btn_interest span,
+	.jv_howto .status .btn_scrap span, .jv_howto .status .btn_interest span
+	{
+	display: inline-block;
+	color: #888;
+	font-size: 21px;
+	line-height: normal
+}
+
+.jv_cont.expired .btn_interest:before, .jv_howto .status .btn_interest:before
+	{
+	margin: 8px 5px 0 0;
+	width: 20px;
+	height: 17px;
+	background-position: -120px -150px;
+	content: ""
+}
+
+.jv_cont.expired .btn_interest.on:before, .jv_howto .status .btn_interest.on:before
+	{
+	background-position: -150px -150px
+}
+
+.jv_howto .status .btn_scrap:before {
+	margin: 6px 5px 0 0
+}
+
+.jv_cont.expired .btn_modify span {
+	line-height: 51px
+}
+
+/* 지원자 통계 */
+.jv_statics .layer_group .layer {
+	overflow: hidden;
+	max-height: 256px
+}
+
+.jv_statics .layer_group .layer:after {
+	display: table;
+	clear: both;
+	content: "";
+	table-layout: fixed
+}
+
+.jv_statics.expand .layer_group {
+	max-height: 480px
+}
+
+.jv_statics .box_chart {
+	float: left;
+	position: relative;
+	padding: 40px 29px;
+	width: 434px;
+	height: 256px;
+	box-sizing: border-box
+} /* WMG-23274 수정 */
+.jv_statics .box_chart:before {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: -1px;
+	width: 1px;
+	height: 100%;
+	background: #ebebeb;
+	content: ""
+}
+
+.jv_statics .box_chart:after {
+	display: block;
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background: #ebebeb;
+	content: ""
+}
+
+.jv_statics .box_chart .tit_stats {
+	position: absolute;
+	top: 39px;
+	left: 29px;
+	color: #444;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 16px
+}
+
+.jv_statics .narrow {
+	padding: 54px 29px 0;
+	width: 289px;
+	height: 256px;
+	border-top: 0
+}
+
+.jv_statics .narrow:first-child {
+	width: 290px
+}
+
+.jv_statics .narrow .tit_stats {
+	top: 29px;
+	left: 34px
+}
+
+.jv_statics .count {
+	padding: 103px 0 0 0
+}
+
+.jv_statics .chart_donut {
+	position: relative;
+	margin: 0 27px 0 0;
+	height: 172px;
+	text-align: right
+}
+
+.jv_statics .narrow .chart_donut {
+	margin: 0 auto;
+	width: 172px;
+	height: 172px
+}
+
+.jv_statics .chart_donut .donut {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	-webkit-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	-webkit-transform-origin: 50% 50%;
+	-ms-transform-origin: 50% 50%
+}
+
+.jv_statics .chart_donut .legend {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 72px 0 0 30px;
+	width: 142px;
+	text-align: center
+}
+
+.jv_statics .chart_donut .legend dl {
+	float: left;
+	width: 60px
+}
+
+.jv_statics .chart_donut .legend dt {
+	display: block;
+	position: absolute;
+	top: 109px;
+	padding-left: 22px;
+	color: #888;
+	font-size: 13px;
+	line-height: 18px
+}
+
+.jv_statics .chart_donut .legend dt:before {
+	position: absolute;
+	top: 2px;
+	left: 0;
+	width: 12px;
+	height: 16px;
+	content: ""
+}
+
+.jv_statics .chart_donut .legend dl.male dt {
+	left: -137px
+}
+
+.jv_statics .chart_donut .legend dl.male dt:before {
+	background-position: 0 -70px
+}
+
+.jv_statics .chart_donut .legend dl.female dt {
+	left: -78px
+}
+
+.jv_statics .chart_donut .legend dl.female dt:before {
+	background-position: -30px -70px
+}
+
+.jv_statics .chart_donut .legend dd {
+	display: block;
+	color: #949494;
+	font-size: 12px;
+	letter-spacing: 0;
+	line-height: 16px
+}
+
+.jv_statics .chart_donut .legend dd.perc {
+	overflow: hidden;
+	height: 28px;
+	color: #51b0f1;
+	font-size: 14px;
+	line-height: 28px
+}
+
+.jv_statics .chart_donut .legend dd.perc span {
+	display: inline-block;
+	font-size: 28px;
+	font-weight: bold;
+	letter-spacing: -1px;
+	vertical-align: baseline
+}
+
+.jv_statics .chart_donut .legend dl.female dd.perc {
+	color: #fa6a71
+}
+
+.jv_statics .chart_donut .legend .total {
+	position: absolute;
+	top: 64px;
+	left: -176px;
+	width: 176px;
+	color: #444;
+	font-size: 28px;
+	line-height: 28px
+}
+
+.jv_statics .chart_donut .legend .total span {
+	display: inline-block;
+	margin: 6px 6px 0 0;
+	font-size: 15px;
+	line-height: 18px;
+	vertical-align: top
+}
+
+.jv_statics .narrow .chart_donut .legend {
+	padding-top: 54px
+}
+
+.jv_statics .narrow .chart_donut .legend .total {
+	display: none
+}
+
+.jv_statics .narrow .chart_donut .legend dt {
+	position: static;
+	padding-left: 0;
+	font-size: 14px
+}
+
+.jv_statics .narrow .chart_donut .legend dt:before {
+	display: none
+}
+
+.jv_statics .narrow .chart_donut .legend dl.male dt {
+	color: #51b0f1
+}
+
+.jv_statics .narrow .chart_donut .legend dl.female dt {
+	color: #fa6a71
+}
+/* wmg-31128 추가 */
+.jv_statics .portfolio .tit_stats {
+	top: 29px
+}
+
+.jv_statics .portfolio .chart_donut {
+	margin: 0 auto
+}
+
+.jv_statics .portfolio .chart_donut .count {
+	display: inline-block;
+	padding-top: 0;
+	margin-right: 6px;
+	margin-left: -23px;
+	position: absolute;
+	top: 45px;
+	right: 75px;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	color: #fff;
+	font-size: 8px;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #52a1fd
+}
+
+.jv_statics .portfolio .chart_donut .legend {
+	padding-top: 66px
+}
+
+.jv_statics .portfolio .chart_donut .legend .total {
+	display: none
+}
+
+.jv_statics .portfolio .chart_donut .legend dt {
+	position: static;
+	padding-left: 0;
+	font-size: 14px
+}
+
+.jv_statics .portfolio .chart_donut .legend dt:before {
+	display: none
+}
+
+.jv_statics .portfolio .chart_donut .legend dl.ptf {
+	float: none;
+	width: 110px
+}
+
+.jv_statics .portfolio .chart_donut .legend dl.ptf dt, .jv_statics .portfolio .chart_donut .legend dd.perc
+	{
+	color: #52a1fd
+}
+
+.jv_statics .portfolio .chart_donut ul.info {
+	margin-top: 24px;
+	width: 220px;
+	text-align: left
+}
+
+.jv_statics .portfolio .chart_donut ul.info li {
+	margin: 4px 0
+}
+
+.jv_statics .portfolio .chart_donut ul.info li i {
+	display: inline-block;
+	margin-right: 6px;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	color: #fff;
+	font-size: 8px;
+	text-align: center;
+	vertical-align: middle;
+	font-style: normal
+}
+
+.jv_statics .portfolio .chart_donut ul.info li span em {
+	display: inline-block;
+	margin-left: 6px;
+	font-size: 12px;
+	color: #888;
+	letter-spacing: -1px
+}
+
+.jv_statics .portfolio .chart_donut ul.info li span em:first-child {
+	margin-left: 0;
+}
+
+.jv_statics .portfolio .chart_donut ul.info li.resume i {
+	background-color: #00d5ab
+}
+
+.jv_statics .portfolio .chart_donut ul.info li.career i {
+	background-color: #f96b71
+}
+
+.jv_statics .portfolio .chart_donut ul.info li.etc span {
+	float: left;
+	width: 50%;
+	margin: 4px 0
+}
+
+.jv_statics .portfolio .chart_donut ul.info li.etc span:before {
+	content: '';
+	display: inline-block;
+	margin-right: 8px;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background-color: #ccc;
+	vertical-align: middle
+}
+
+.jv_statics .count .status {
+	margin-bottom: 2px;
+	padding-right: 29px;
+	text-align: right
+}
+
+.jv_statics .count .status button {
+	font-size: 12px;
+	color: #777
+}
+
+.jv_statics .count .status button i, .jv_statics .count .status button span
+	{
+	display: inline-block;
+	vertical-align: middle
+}
+
+.jv_statics .count .status button i {
+	width: 16px;
+	height: 16px;
+	background-image:
+		url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cg stroke='%23B5BACB' stroke-linecap='round' stroke-linejoin='round' fill='none' fill-rule='evenodd'%3E%3Cpath d='M3.143 5.5h6.524a3.333 3.333 0 0 1 0 6.667H3'/%3E%3Cpath d='M5.5 7.857 3.143 5.5 5.5 3.143'/%3E%3C/g%3E%3C/svg%3E");
+	background-repeat: no-repeat
+}
+
+.jv_statics .count .detail.v2021 {
+	line-height: 1
+}
+
+.jv_statics .count .detail .detail-item {
+	color: #888;
+	font-size: 13px;
+	letter-spacing: -1px;
+	height: 34px;
+	text-align: left;
+	vertical-align: top
+}
+
+.jv_statics .count .detail .detail-item:disabled {
+	cursor: default
+}
+
+.jv_statics .count .detail .detail-item:disabled i {
+	display: none
+}
+
+.jv_statics .count .detail .detail-item:disabled .info {
+	padding-right: 10px
+}
+
+.jv_statics .count .detail .detail-item:disabled .info em {
+	color: #888
+}
+
+.jv_statics .count .detail .detail-item.is--active .position {
+	color: #5b76f5
+}
+
+.jv_statics .count .detail .position {
+	overflow: hidden;
+	float: left;
+	width: 180px;
+	text-overflow: ellipsis;
+	white-space: nowrap
+}
+
+.jv_statics .count .detail .info {
+	overflow: hidden;
+	float: left;
+	width: 52px;
+	text-align: right;
+	box-sizing: border-box
+}
+
+.jv_statics .count .detail .info em {
+	color: #5b76f5;
+	letter-spacing: 0;
+	white-space: nowrap
+}
+
+.jv_statics .count .detail .info i {
+	display: inline-block;
+	margin-top: 2px;
+	width: 8px;
+	height: 16px;
+	vertical-align: middle;
+	background-image:
+		url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='11'%3E%3Cpath d='m.5 10.176 5-4.705L.5.765' stroke='%23B5BACB' fill='none' fill-rule='evenodd'/%3E%3C/svg%3E");
+	background-repeat: no-repeat
+}
+/* WMG-31128 추가 끝 */
+.jv_statics .chart_line {
+	display: table;
+	position: relative;
+	margin: 0 0 0 87px;
+	width: 288px;
+	box-sizing: border-box;
+	background:
+		url(//www.saraminimage.co.kr/sri/person/jobs_view/bg_graph_stats.png)
+		0 0 repeat-x
+}
+
+.jv_statics .narrow .chart_line {
+	margin: 11px 0 0 0;
+	width: 230px
+}
+
+.jv_statics .chart_line .col {
+	display: table-cell;
+	position: relative;
+	padding-bottom: 34px;
+	height: 130px;
+	text-align: center
+}
+
+.jv_statics .chart_line .col .legend {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -24px;
+	width: 48px;
+	height: 30px;
+	color: #888;
+	font-size: 12px;
+	letter-spacing: -1px;
+	line-height: 15px;
+	word-break: break-all
+}
+
+.jv_statics .chart_line .bar {
+	position: relative;
+	margin: 0 auto;
+	width: 24px;
+	height: 100%
+}
+
+.jv_statics .chart_line .bar .fill {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0;
+	background-color: #acd9f8
+}
+
+.jv_statics .chart_line .bar .value {
+	position: absolute;
+	top: -18px;
+	left: 50%;
+	margin-left: -24px;
+	width: 48px;
+	height: 18px;
+	color: #92c9f5;
+	font-size: 12px;
+	letter-spacing: 0;
+	line-height: 18px
+}
+
+.jv_statics .chart_line .col.emph .bar .fill {
+	background: #4fa4f9
+}
+
+.jv_statics .chart_line .col.emph .bar .value {
+	color: #4fa4f9;
+	font-weight: bold
+}
+
+.jv_statics .chart_line.sub .bar .fill {
+	background-color: #aeb9f0
+}
+
+.jv_statics .chart_line.sub .bar .value {
+	color: #7c90f2
+}
+
+.jv_statics .chart_line.sub .col.emph .bar .fill {
+	background-color: #7c90f2
+}
+
+.jv_statics .count .total {
+	width: 100%;
+	height: 57px;
+	text-align: center
+}
+
+.jv_statics .count.sub .total {
+	position: absolute;
+	top: 23px;
+	left: 0
+}
+
+.jv_statics .count .total dt {
+	display: block;
+	margin-bottom: 2px;
+	color: #444;
+	font-size: 15px;
+	line-height: 22px
+}
+
+.jv_statics .count .total dd {
+	display: block;
+	color: #666;
+	font-size: 20px;
+	line-height: 30px
+}
+
+.jv_statics .count .total dd span {
+	color: #5b76f5;
+	font-size: 28px;
+	font-weight: bold;
+	vertical-align: top
+}
+
+.jv_statics .count .scroll {
+	overflow-x: hidden;
+	overflow-y: auto;
+	width: 100%;
+	height: 153px
+}
+
+.jv_statics .count .detail {
+	padding: 6px 29px;
+	width: 430px;
+	box-sizing: border-box;
+	color: #888;
+	font-size: 13px;
+	letter-spacing: -1px;
+	line-height: 34px
+} /* WMG-23274 수정 */
+.jv_statics .count .detail:after {
+	display: table;
+	clear: both;
+	content: "";
+	table-layout: fixed
+}
+
+.jv_statics .count .detail dt {
+	overflow: hidden;
+	float: left;
+	width: 310px;
+	text-overflow: ellipsis;
+	white-space: nowrap
+} /* WMG-23274 수정 */
+.jv_statics .count .detail dd {
+	overflow: hidden;
+	float: left;
+	width: 52px;
+	text-align: right
+}
+
+.jv_statics .count .detail dd span {
+	color: #5b76f5;
+	letter-spacing: 0;
+	white-space: nowrap
+}
+
+.jv_statics .count.narrow .detail {
+	width: 290px
+} /* WMG-23274 추가 */
+.jv_statics .count.narrow .detail dt {
+	width: 180px
+} /* WMG-23274 추가 */
+.jv_statics .cont {
+	position: relative
+}
+
+.jv_statics .box_check {
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	z-index: 5;
+	width: calc(100% - 2px);
+	height: calc(100% - 2px);
+	text-align: center;
+	padding-top: 78px;
+	box-sizing: border-box;
+	background-color: rgba(255, 255, 255, 0.9)
+}
+
+.jv_statics .box_check .tit {
+	color: #444;
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: -1px
+}
+
+.jv_statics .box_check .txt {
+	margin-top: 15px;
+	color: #888;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: -1px
+}
+
+.jv_statics .box_check .link_login {
+	display: inline-block;
+	margin-top: 29px;
+	width: 158px;
+	height: 41px;
+	border-radius: 4px;
+	color: #fff;
+	font-size: 14px;
+	line-height: 39px;
+	text-align: center;
+	background-color: #4876ef
+}
+
+/* 인사통 */
+.jv_insatong.expand .layer_group {
+	max-height: 480px
+}
+
+.jv_insatong .layer_group .layer {
+	padding-bottom: 15px
+}
+
+.jv_insatong .txt_qna {
+	overflow: hidden;
+	height: 58px;
+	border-bottom: 1px solid #ebebeb;
+	color: #666;
+	font-size: 14px;
+	line-height: 58px;
+	text-align: center
+}
+
+.jv_insatong .txt_qna .company {
+	display: inline-block;
+	overflow: hidden;
+	padding-right: 2px;
+	max-width: 360px;
+	font-weight: bold;
+	text-overflow: ellipsis;
+	vertical-align: top;
+	white-space: nowrap
+}
+
+.jv_insatong .txt_qna .date {
+	padding-left: 18px;
+	color: #999;
+	letter-spacing: 0
+}
+
+.jv_insatong .txt_qna .num {
+	color: #5b76f5;
+	font-weight: bold
+}
+
+.jv_insatong .item_qna {
+	position: relative;
+	padding: 22px 0 3px 0;
+	border-top: 0;
+	font-size: 0;
+	letter-spacing: -1px
+}
+
+.jv_insatong .more .item:first-of-type {
+	border-top: 0
+}
+
+.jv_insatong .item_qna dl {
+	position: relative;
+	padding: 0 0 0 20px;
+	width: 640px
+}
+
+.jv_insatong .item_qna dl dt {
+	margin-left: 10px;
+	color: #222;
+	font-size: 15px;
+	line-height: 20px;
+	word-break: break-all
+}
+
+.jv_insatong .item_qna dl dt>span {
+	display: inline-block;
+	margin-right: 6px
+}
+
+.jv_insatong .item_qna dl dd {
+	display: inline-block;
+	margin: 10px 0 0 10px;
+	padding: 7px 20px 10px 20px;
+	border: 1px solid #cfcfcf;
+	border-radius: 4px;
+	box-sizing: border-box;
+	color: #222;
+	font-size: 14px;
+	line-height: 20px;
+	vertical-align: top;
+	word-break: break-all;
+	background: #fcfcfc
+}
+
+.jv_insatong .item_qna .btn_like {
+	position: absolute;
+	top: 16px;
+	left: 706px;
+	padding: 0 7px 0 30px;
+	width: 108px;
+	height: 32px;
+	border: 1px solid #dbdbdb;
+	border-radius: 0;
+	box-sizing: border-box;
+	color: #666;
+	font-size: 12px;
+	letter-spacing: -1px;
+	line-height: 28px;
+	text-align: left
+}
+
+.jv_insatong .item_qna .btn_like span {
+	display: inline-block;
+	margin-left: 3px;
+	width: 21px;
+	text-align: center
+}
+
+.jv_insatong .item_qna .btn_like:after {
+	display: block;
+	position: absolute;
+	top: 6px;
+	left: 7px;
+	width: 19px;
+	height: 19px;
+	background-position: -150px -90px;
+	content: ""
+}
+
+.jv_insatong .item_qna .btn_like.liked {
+	border-color: #9aa9f3;
+	color: #5b76f5
+}
+
+.jv_insatong .item_qna .btn_like.liked:after {
+	background-position: -150px -120px
+}
+
+/* 기업정보 */
+.jv_company>.box {
+	padding: 24px 14px
+}
+
+.jv_company .logo {
+	overflow: hidden;
+    float: left;
+    width: 430px;
+    height: 350px;
+    line-height: 155px;
+    text-align: center;
+}
+
+.jv_company .logo>img {
+	vertical-align: middle
+}
+
+.jv_company .wrap_info {
+	padding: 0 15px;
+	width: 810px
+}
+
+.jv_company .wrap_info .title {
+	margin-bottom: 15px;
+	height: 28px;
+	font-size: 0;
+	margin-left: 155px;
+}
+
+.jv_company .wrap_info .company_name {
+	display: inline-block;
+	overflow: hidden;
+	margin-right: 5px;
+	padding-right: 2px;
+	max-width: 540px;
+	color: #222;
+	font-size: 18px;
+	line-height: 25px;
+	text-overflow: ellipsis;
+	vertical-align: top;
+	white-space: nowrap
+}
+
+.jv_company .wrap_info .title .btn_link {
+	margin-left: 4px
+}
+
+.jv_company .logo+.wrap_info {
+	padding: 0 15px 0 290px;
+	width: 800px;
+}
+
+.jv_company .logo+.wrap_info .company_name {
+	max-width: 238px
+}
+
+.jv_company .info {
+	margin-left: 140px;
+}
+
+.jv_company .info:after {
+	display: table;
+	clear: both;
+	content: "";
+	table-layout: fixed
+}
+
+.jv_company .info dl {
+	display: block;
+    float: left;
+    position: relative;
+    margin-left: 20px;
+    padding-left: 70px;
+    width: 260px;
+    min-height: 28px;
+    line-height: 28px;
+}
+
+.jv_company .info dl dt {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 70px;
+	color: #888;
+	font-size: 14px;
+	line-height: 28px
+}
+
+.jv_company .info dl dd {
+	overflow: hidden;
+	width: 100%;
+	color: #444;
+	font-size: 14px;
+	line-height: 28px;
+	text-overflow: ellipsis;
+	white-space: nowrap
+}
+
+.jv_company .info dl dd>span {
+	color: #949494
+}
+
+.jv_company .info dl dd>a {
+	display: inline-block;
+	overflow: hidden;
+	padding-right: 1px;
+	max-width: 99%;
+	color: #4876ef;
+	text-decoration: underline;
+	text-overflow: ellipsis;
+	vertical-align: top;
+	white-space: nowrap
+}
+
+.jv_company .info dl.wide {
+	width: 400px;
+}
+
+.jv_company .info dl.wide dd {
+	padding-top: 5px;
+	line-height: 18px
+}
+
+.jv_company .btn_modify {
+	position: absolute;
+	top: -34px;
+	right: 0
+}
+
+.jv_company .btn_modify>span {
+	color: #888;
+	font-size: 13px;
+	letter-spacing: -1px
+}
+
+.jv_company .btn_modify:after {
+	margin: 8px 0 0 8px;
+	width: 6px;
+	height: 9px;
+	background-position: 0 -150px;
+	content: ""
+}
+/* 기업인증 WMG-23893 */
+.jv_company .noti {
+	margin: 16px 10px 0 0;
+	color: #adadad;
+	font-size: 13px;
+	line-height: 28px;
+	text-align: right
+}
+
+.jv_company sup {
+	display: inline-block;
+	margin: -1px 0 0 2px;
+	color: #adadad;
+	font-size: 13px;
+	vertical-align: top
+}
+
+.jv_company .sub {
+	margin-top: 9px;
+	padding: 0;
+	border-top: 1px solid #ebebeb;
+	font-size: 14px;
+	text-align: center
+} /* WMG-23893 추가*/
+.jv_company .sub .sub_header {
+	padding: 17px 0 23px;
+	border-bottom: 1px solid #ebebeb;
+	color: #666;
+	line-height: normal;
+	background-color: #fcfcfc
+}
+
+.jv_company .sub .mark_list {
+	padding: 31px 0
+}
+
+.jv_company .sub .mark_list li {
+	display: inline-block;
+	position: relative;
+	margin-right: 90px;
+	width: 78px;
+	color: #333;
+	line-height: 20px;
+	vertical-align: top;
+	cursor: pointer
+}
+
+.jv_company .sub .mark_list li span {
+	display: table-cell;
+	width: 78px;
+	height: 40px;
+	vertical-align: middle
+}
+
+.jv_company .sub .mark_list li:last-child {
+	margin-right: 0
+}
+
+.jv_company .sub .mark_list li:before {
+	position: absolute;
+	top: -4px;
+	left: -29px;
+	width: 25px;
+	height: 50px;
+	background:
+		url(//www.saraminimage.co.kr/sri/company/layout/line-left.png) center
+		center no-repeat;
+	content: ''
+}
+
+.jv_company .sub .mark_list li:after {
+	position: absolute;
+	top: -4px;
+	right: -29px;
+	width: 25px;
+	height: 50px;
+	background:
+		url(//www.saraminimage.co.kr/sri/company/layout/line-right.png) center
+		center no-repeat;
+	content: ''
+}
+
+.jv_company .sub .mark_list li:hover {
+	text-decoration: underline
+}
+
+/* 합격자료 */
+.jv_reference.expand .layer_group {
+	max-height: 480px
+}
+
+.jv_reference .layer_group .layer:after {
+	display: table;
+	clear: both;
+	content: "";
+	table-layout: fixed
+}
+
+.jv_reference .reference {
+	display: block;
+	float: left;
+	position: relative;
+	padding: 32px 29px 27px;
+	width: 289px;
+	height: 239px;
+	box-sizing: border-box
+}
+
+.jv_reference .reference:first-child {
+	width: 290px
+}
+
+.jv_reference .reference:before {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: -1px;
+	width: 1px;
+	height: 100%;
+	background: #ebebeb;
+	content: ""
+}
+
+.jv_reference .reference:after {
+	display: block;
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background: #ebebeb;
+	content: ""
+}
+
+.jv_reference .cont_more .reference:after {
+	display: none
+}
+
+.jv_reference .reference dl dt {
+	margin-bottom: 12px;
+	color: #444;
+	font-size: 18px
+}
+
+.jv_reference .reference dl dd {
+	overflow: hidden;
+	height: 69px;
+	color: #888;
+	font-size: 14px;
+	line-height: 23px
+}
+
+.jv_reference .reference.cvletter dd {
+	height: 115px
+}
+
+.jv_reference .reference.news dd {
+	height: 115px
+}
+
+.jv_reference .reference dl dd.view {
+	margin-top: 44px;
+	padding-top: 7px;
+	height: 23px;
+	border-top: 1px solid #ebebeb;
+	text-align: right
+}
+
+.jv_reference .reference dl dd.view:before {
+	margin: 8px 5px 0 0;
+	width: 16px;
+	height: 10px;
+	background-position: -60px -70px;
+	content: ""
+}
+
+.jv_reference .reference dl dd.view span {
+	color: #666;
+	font-weight: bold;
+	letter-spacing: 0
+}
+
+.jv_reference .reference.bg {
+	background-image:
+		url(//www.saraminimage.co.kr/sri/person/jobs_view/bg_reference.jpg)
+}
+
+.jv_reference .reference.bg.cvletter {
+	background-position: 0 0
+}
+
+.jv_reference .reference.bg.news {
+	background-position: 0 -250px
+}
+
+.jv_reference .reference.bg dl dt, .jv_reference .reference.bg dl dd,
+	.jv_reference .reference.bg dl dd.view, .jv_reference .reference.bg dl dd.view span
+	{
+	color: #fff
+}
+
+.jv_reference .reference .link {
+	padding-top: 28px;
+	text-align: center
+}
+
+.jv_reference .reference .link span {
+	display: block;
+	color: #444;
+	font-size: 18px;
+	line-height: 26px
+}
+
+.jv_reference .reference .link .guide {
+	display: inline-block;
+	margin-top: 44px;
+	border-bottom: 1px solid #bcbcbc;
+	color: #666;
+	font-size: 14px;
+	line-height: 18px
+}
+
+.jv_reference .reference .more {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	padding-top: 80px;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	text-align: center;
+	background: rgba(68, 91, 153, 0.92)
+}
+
+.jv_reference .reference .more span {
+	display: block;
+	color: #fff;
+	font-size: 15px;
+	line-height: 31px
+}
+
+.jv_reference .reference .more .count {
+	display: inline-block;
+	border-bottom: 1px solid #b6bdd3;
+	font-size: 18px;
+	line-height: 24px
+}
+
+.jv_reference .reference .more .count strong {
+	font-weight: bold;
+	letter-spacing: 0
+}
+
+.jv_reference .reference:focus .more, .jv_reference .reference:hover .more
+	{
+	display: block
+}
+
+/* 태그 */
+.jv_footer {
+	margin-top: 41px
+}
+
+.jv_footer .cont {
+	padding-top: 90px
+}
+
+.jv_footer .tags {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	border: 1px solid #fff;
+	box-sizing: border-box;
+	font-size: 0
+}
+
+.jv_footer .tags.on {
+	border: 1px solid #ebebeb;
+	background: #fff
+}
+
+.jv_footer .tags ul {
+	overflow: hidden;
+	padding: 8px 47px 0 0;
+	height: 38px;
+	line-height: 38px
+}
+
+.jv_footer .tags.on ul {
+	overflow-y: auto;
+	padding: 8px 8px 0 0;
+	height: auto;
+	max-height: 152px
+}
+
+.jv_footer .tags ul li {
+	display: inline-block;
+	margin-left: 8px;
+	vertical-align: top
+}
+
+.jv_footer .tags ul li a {
+	display: block;
+	padding: 6px 10px 8px;
+	color: #444;
+	font-size: 12px;
+	line-height: 16px;
+	background: #f1f3f9
+}
+
+.jv_footer .tags .btn_tags {
+	display: none;
+	position: absolute;
+	top: 8px;
+	right: -1px;
+	z-index: 2;
+	width: 32px;
+	height: 30px;
+	border: 1px solid #e5e6eb;
+	background: #fff
+}
+
+.jv_footer .tags .btn_tags:before, .jv_footer .tags .btn_tags:after {
+	display: block;
+	position: absolute;
+	background: #949494;
+	content: ""
+}
+
+.jv_footer .tags .btn_tags:before {
+	top: 9px;
+	left: 14px;
+	width: 2px;
+	height: 10px
+}
+
+.jv_footer .tags .btn_tags:after {
+	top: 13px;
+	left: 10px;
+	width: 10px;
+	height: 2px
+}
+
+.jv_footer .tags.on .btn_tags {
+	top: auto;
+	bottom: -30px
+}
+
+.jv_footer .tags.on .btn_tags:before {
+	display: none
+}
+
+.jv_footer .utils {
+	height: 28px;
+	line-height: 28px;
+	text-align: right
+}
+
+.jv_footer .utils .share, .jv_footer .utils .report {
+	margin: 0 4px 0 0;
+	vertical-align: top
+}
+
+.jv_footer .utils .report .btn_report:before {
+	margin: 6px 5px 0 0
+}
+
+.jv_footer .utils .copy {
+	float: left;
+	position: relative;
+	padding-left: 20px;
+	color: #444;
+	font-size: 13px
+}
+
+.jv_footer .utils .copy:before {
+	display: block;
+	position: absolute;
+	top: 8px;
+	left: 0;
+	width: 14px;
+	height: 14px;
+	border-radius: 14px;
+	color: #fff;
+	font-size: 9px;
+	font-weight: bold;
+	line-height: 14px;
+	text-align: center;
+	background: #e1e1e1;
+	content: "!"
+}
+
+.jv_footer .utils .copy a {
+	display: inline-block;
+	line-height: 18px;
+	text-decoration: underline
+}
+/* 마감표시 */
+.expired {
+	z-index: auto;
+	padding: 54px 0 64px;
+	text-align: center;
+	background: #f7f7fa
+}
+
+.expired .copy {
+	margin-bottom: 6px;
+	color: #222;
+	font-size: 26px;
+	letter-spacing: -1px;
+	line-height: 38px
+}
+
+.expired .copy strong {
+	color: #4876ef;
+	font-weight: bold
+}
+
+.expired .copy+.copy {
+	margin-bottom: 28px;
+	font-size: 16px
+}
+
+.expired .copy+.copy strong {
+	display: inline-block;
+	overflow: hidden;
+	max-width: 440px;
+	text-align: left;
+	text-overflow: ellipsis;
+	vertical-align: top;
+	white-space: nowrap
+}
+
+/* SMS공유 WMG-12367 from /css/nudge/content.css */
+.layer_pop_manage {
+	position: absolute;
+	z-index: 30;
+	border: 1px solid #444;
+	box-sizing: border-box;
+	font-family: "Malgun Gothic", gulim, dotum, sans-serif;
+	background: #fff;
+	box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.12)
+}
+
+.layer_pop_manage legend {
+	visibility: hidden;
+	overflow: hidden;
+	margin-left: -1px;
+	width: 1px;
+	height: 1px
+}
+
+.layer_pop_manage.layer_sms {
+	padding: 0;
+	width: 440px
+}
+
+.layer_pop_manage.layer_sms_error {
+	padding: 0;
+	width: 357px
+}
+
+.layer_pop_manage.layer_sms_error .txt_notice {
+	margin: 10px 0 25px
+}
+
+.layer_pop_manage .layer_manage_wrap {
+	position: relative;
+	z-index: 100;
+	padding: 35px 30px 30px
+}
+
+.layer_pop_manage .layer_manage_wrap h4 {
+	margin-bottom: 8px;
+	color: #444;
+	font-size: 19px;
+	font-weight: bold;
+	letter-spacing: -1px;
+	text-align: left
+}
+
+.layer_pop_manage .layer_manage_wrap .txt_sms_desc {
+	color: #666;
+	font-size: 13px;
+	letter-spacing: -1px;
+	line-height: 21px;
+	text-align: left
+}
+
+.layer_pop_manage .layer_manage_wrap .txt_notice {
+	margin: 0;
+	padding: 0;
+	color: #666;
+	font-size: 13px;
+	letter-spacing: -1px;
+	line-height: 21px;
+	text-align: left
+}
+
+.layer_pop_manage .layer_manage_wrap .txt_link {
+	color: #6b80f1;
+	text-decoration: underline
+}
+
+.layer_manage_wrap .bottom_btn_wrap {
+	margin-top: 20px;
+	text-align: center
+}
+
+.layer_manage_wrap .bottom_btn_wrap .btn_basic_type05.btn_send {
+	padding: 5px 33px 9px
+}
+
+.layer_manage_wrap .btn_layer_close {
+	position: absolute;
+	top: 14px;
+	right: 14px;
+	width: 17px;
+	height: 17px;
+	border: 0 none;
+	background:
+		url(//www.saraminimage.co.kr/ui/layout/person_mypage_2017/btn_layer_close.png)
+		no-repeat 50% 50%;
+	cursor: pointer
+}
+
+.layer_manage_wrap .btn_layer_close span {
+	overflow: hidden;
+	font-size: 0;
+	line-height: 0;
+	text-indent: -100%;
+	white-space: nowrap
+}
+
+.default_table {
+	width: 100%;
+	border-spacing: 0;
+	border-collapse: collapse;
+	font-family: "Malgun Gothic", gulim, dotum, sans-serif;
+	table-layout: fixed
+}
+
+.default_table.nudge_table {
+	margin-top: 15px;
+	border-top: 1px solid #686868
+}
+
+.default_table.nudge_table th {
+	padding-left: 20px;
+	height: 43px;
+	border-bottom: 1px solid #eaeaea;
+	box-sizing: border-box;
+	color: #666;
+	font-size: 13px;
+	font-weight: normal;
+	letter-spacing: -1px;
+	text-align: left;
+	background: #f8f8f8;
+	_height: 50px
+}
+
+.default_table.nudge_table td {
+	padding: 9px 15px 9px;
+	border-bottom: 1px solid #eaeaea;
+	box-sizing: border-box;
+	color: #444;
+	font-family: "Malgun Gothic", gulim, dotum, sans-serif;
+	font-size: 13px;
+	text-align: left;
+	word-break: break-all;
+	_padding: 4px 10px
+}
+
+.default_table.nudge_table td input {
+	padding: 0 5px;
+	height: 32px;
+	border: 1px solid #dbdbdb;
+	box-sizing: border-box;
+	font-family: "Malgun Gothic", gulim, dotum, sans-serif;
+	font-size: 13px;
+	line-height: 32px;
+	vertical-align: middle
+}
+
+.default_table.nudge_table td.tbl_send {
+	overflow: hidden
+}
+
+.default_table.nudge_table .txt_phone {
+	float: left;
+	margin-right: 10px;
+	padding-top: 6px;
+	color: #444;
+	font-size: 13px
+}
+
+.default_table.nudge_table .btn_change {
+	float: left
+}
+
+.btn_basic_type04 {
+	display: inline-block;
+	padding: 5px 13px 9px;
+	height: 32px;
+	border: 1px solid #8f8f8f;
+	box-sizing: border-box;
+	color: #fff;
+	font-size: 13px;
+	letter-spacing: -1px;
+	vertical-align: top;
+	background-color: #9c9c9c
+}
+
+.btn_basic_type05 {
+	display: inline-block;
+	padding: 5px 13px 9px;
+	height: 32px;
+	border: 1px solid #5f75eb;
+	box-sizing: border-box;
+	color: #fff;
+	font-size: 13px;
+	letter-spacing: -1px;
+	vertical-align: top;
+	background-color: #6b80f1
+}
+
+.btn_basic_type06 {
+	display: inline-block;
+	padding: 5px 13px 9px;
+	height: 32px;
+	border: 1px solid #6b80f1;
+	box-sizing: border-box;
+	color: #6b80f1;
+	font-size: 13px;
+	letter-spacing: -1px;
+	vertical-align: top;
+	background-color: #fff
+}
+
+.default_table caption {
+	display: none
+}
+
+/* 플로팅 배너 WMG-19101 from /css/nudge/content.css */
+.main_nudge:before, .main_nudge .btn_close:after {
+	background:
+		url(//www.saraminimage.co.kr/sri/person/bg/bg_resume_nudge.png)
+		no-repeat 0 0
+}
+
+.main_nudge {
+	position: fixed;
+	right: 23px;
+	bottom: 23px;
+	z-index: 1000;
+	padding: 17px 35px 21px 116px;
+	min-width: 354px;
+	height: 100px;
+	box-sizing: border-box;
+	background: #313131
+}
+
+.main_nudge:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100px;
+	content: ""
+}
+
+.main_nudge .desc_nudge {
+	color: #fff;
+	font-size: 15px;
+	letter-spacing: -1px;
+	line-height: 21px;
+	vertical-align: middle
+}
+
+.main_nudge.main_nudge .link_nudge {
+	text-decoration: underline
+}
+
+.main_nudge .btn_close {
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 39px;
+	height: 40px;
+	border: 0;
+	background: none
+}
+
+.main_nudge .btn_close:after {
+	display: block;
+	margin: 0 auto;
+	width: 12px;
+	height: 12px;
+	background-position: 0 -280px;
+	content: ""
+}
+
+.resume_nudge1 {
+	height: 100px
+}
+
+.resume_nudge1:before {
+	height: 100px;
+	background-position: 0 0
+}
+
+.main_nudge.resume_nudge1 .link_nudge {
+	color: #acf1f3
+}
+
+.resume_nudge2 {
+	height: 78px
+}
+
+.resume_nudge2:before {
+	height: 78px;
+	background-position: 0 -110px
+}
+
+.main_nudge.resume_nudge2 .link_nudge {
+	color: #ff98a4
+}
+
+.resume_nudge3 {
+	height: 78px
+}
+
+.resume_nudge3:before {
+	height: 78px;
+	background-position: 0 -200px
+}
+
+.main_nudge.resume_nudge3 .link_nudge {
+	color: #86c2ff
+}
+
+/* 인쇄 */
+@page {
+	margin: 60px 40px;
+	size: A4
+}
+
+body#sri_layout_popup.printing #content {
+	background: #fff
+}
+
+body#sri_layout_popup.printing .main_nudge, body#sri_layout_popup.printing .jview .btn_tooltip,
+	body#sri_layout_popup.printing .jview .btn_link, body#sri_layout_popup.printing .jview .btn_move_map,
+	body#sri_layout_popup.printing .jview .btn_interest, body#sri_layout_popup.printing .jview .btn_share,
+	body#sri_layout_popup.printing .jview .wrap_share, body#sri_layout_popup.printing .jv_summary .btn_modify,
+	body#sri_layout_popup.printing .jv_footer .btn_tags, body#sri_layout_popup.printing .jv_cont .btn_more_cont
+	{
+	display: none !important
+}
+
+body#sri_layout_popup.printing .toolTipWrap {
+	display: block;
+	margin: 0;
+	padding: 2px 0
+}
+
+body#sri_layout_popup.printing .toolTip {
+	display: block;
+	position: static;
+	margin: 0;
+	padding: 0;
+	width: auto;
+	border: 0;
+	color: inherit;
+	background: none;
+	box-shadow: none
+}
+
+body#sri_layout_popup.printing .toolTip .tail, body#sri_layout_popup.printing .toolTip .btnClose
+	{
+	display: none
+}
+
+body#sri_layout_popup.printing .jview .toolTip ul, body#sri_layout_popup.printing .jview .toolTip .toolTipCont
+	{
+	font-size: 12px
+}
+
+body#sri_layout_popup.printing .jview .toolTip ul>li, body#sri_layout_popup.printing .jview .toolTip ul>li span
+	{
+	line-height: 18px
+}
+
+body#sri_layout_popup.printing .jv_cont .layer_group {
+	overflow: visible;
+	position: static
+}
+
+body#sri_layout_popup.printing .jv_cont .layer_group .layer {
+	max-height: none
+}
+
+body#sri_layout_popup.printing .jv_cont .layer_group .layer .cont_more {
+	display: block
+}
+
+body#sri_layout_popup.printing .jv_footer .cont {
+	padding-top: 0
+}
+
+body#sri_layout_popup.printing .jv_footer .cont .tags {
+	overflow: visible;
+	position: static;
+	padding: 9px 0;
+	height: auto
+}
+
+@media print {
+	* {
+		-webkit-print-color-adjust: exact !important;
+		print-color-adjust: exact !important;
+		color-adjust: exact !important
+	}
+}
+
+
+.desc_txt_preview .txt {
+	padding: 0;
+	margin: 0;
+	font-size: 13px;
+	font-weight: bold;
+	color: #FFF;
+	letter-spacing: -1px;
+	line-height: 24px
+}
+
+.desc_txt_preview .txt .point {
+	font-weight: bold;
+	font-size: 16px;
+	color: #FFF
+}
+
+.job_view_preview {
+	padding-top: 130px
+}
