@@ -13,10 +13,12 @@
 - jsp
 
 ## 3. 다이어그램
+![](info/diagram.png)
 
+## 4. DB ERD
+![](info/db_erd.png)
 
-
-## 4. 공부 목표 및 담당 기능
+## 5. 공부 목표 및 담당 기능
 - API 데이터 파싱
   - 사람인 API 와 회사 정보 API 데이터 파싱 및 DB 연결
 
@@ -29,4 +31,8 @@
 
 -AJAX 를 사용한 아이디 중복 확인 및 메일 인증 번호 체크
 
-## 5. 구현 화면
+## 6. 구현 화면
+![](info/loginForm.png)
+![](info/findMemForm.png)
+![](info/registerForm.png)
+![](info/HireDetail.png)

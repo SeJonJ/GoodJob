@@ -188,6 +188,7 @@ gradle-app.setting
 APIProperties.java
 MailProperties.java
 application.properties
+/src/test/
 
 ## Not My Work ##
 /src/main/webapp/WEB-INF/views/comm/
