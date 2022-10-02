@@ -1,5 +1,7 @@
 # goodJob : 취업 정보 제공 사이트
 
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FSeJonJ%2FGoodJob&count_bg=%233310C8&title_bg=%2316C86B&icon=&icon_color=%23E7E7E7&title=HITS&edge_flat=true)](https://hits.seeyoufarm.com)
+
 ## 1. 개요
 - 사람인 API 와 공공데이터 포털의 회사 정보 제공 API 를 사용해
     취업 정보 및 회사 정보 제공을 위한 사이트 개발
