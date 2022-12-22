@@ -36,3 +36,7 @@
 ![](info/findMemForm.png)
 ![](info/registerForm.png)
 ![](info/HireDetail.png)
+
+## 7. 실행 방법
+- 해당 프로젝트 구동!!
+- locahost:8080/goodjob 로 접속!!
