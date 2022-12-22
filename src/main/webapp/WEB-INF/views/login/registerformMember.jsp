@@ -253,7 +253,7 @@
 		$checkEmail.click(function() {
 			$.ajax({
 				type : "POST",
-				url : "/login/mailConfirm",
+				url : "/goodjob/login/mailConfirm",
 				data : {
 					"email" : $memail.val()
 				},
